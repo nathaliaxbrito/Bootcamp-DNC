@@ -1,9 +1,22 @@
-/*menu principal*/
+:root{
+    --azul-dnc: #0C70F2;
+    --preto-dnc: #303030;
+    --cinza-hover: #c9c9c9;
+
+    --fonte-padrao:'Inter';
+
+}
 
 body{
     margin: 0px;
     padding: 0px;
+
+    background:linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, #303030 24.84%) #303030;
+    background-repeat: no-repeat;
 }
+
+/*menu navegacao principal*/
+
  #principal{
     width: 100%;
     Height: 100px;
@@ -56,4 +69,115 @@ body{
 
     cursor:pointer;
 
+ }
+
+ /*sessao principal site*/
+
+ section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+ }
+
+ header{
+    color:white;
+    font-family: var(--fonte-padrao);
+
+ }
+
+ header h1{
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+    text-align: center;
+
+    
+ }
+
+ header h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    
+    margin-bottom: 100px;
+
+ }
+
+ header .invert{
+    background-color: black;
+    font-weight: bold;
+    padding:5px;
+ }
+
+ /*formulario*/
+
+ form{
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 30px;
+    font-weight: 600;
+    width: 600px;
+
+ }
+
+ .formgroup{
+    display:flex;
+    flex-direction: column;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+ }
+
+ form input{
+    border-radius: 10px;
+    height: 30px;
+    border:0px;
+    font-size: 20px;
+    padding:7px;
+ }
+
+ form label{
+    margin:10px 0px 10px 0px;
+ }
+
+ form input::placeholder{
+    color: rgba(57,57,57,0.5);
+
+ }
+
+ .checkbox-itens label{
+    font-size: 25px;
+    
+ }
+
+ .checkbox-itens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ input[type="checkbox"]{
+    transform: scale(1.7);
+ }
+
+ input[type="submit"]{
+    background-color: blue;
+    width:100%;
+    height: 56px;
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+
+    margin-top: 100px;
+    box-shadow: 0px 4px 4px rgba(12,112.242,0,25);
+
+    cursor: pointer;
+    
  }
