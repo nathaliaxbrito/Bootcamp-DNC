@@ -179,5 +179,149 @@ body{
     box-shadow: 0px 4px 4px rgba(12,112.242,0,25);
 
     cursor: pointer;
+
+ }
+
+ /*Rodapé*/
+
+ footer{
+    width: 100%;
+    background: var(--azul-dnc);
+ }
+
+ footer .linha1{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ footer ul{
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+
+ }
+
+ footer h5{
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: var(--fonte-padrao);
+    background-color: var(--preto-dnc);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 15px;
+ }
+
+ footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height 330px;
+
+ }
+
+ footer ul li {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--fonte-padrao);
+    margin: 20px 0px 20px 0px;
+
+ }
+
+ footer ul li a{
+    color: white;
+    text-decoration: none;
+
+ }
+
+ footer .endereco{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--fonte-padrao);
+    color: white;
+    width:20%
     
+ }
+
+ footer .linha2{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+    height: 35px;
+ }
+
+ footer .linha2 a{
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    
+
+ }
+
+ footer.linha2 a:hover{
+    color: var(--cinza-hover);
+ }
+
+ footer .linha2 a:first-child{
+    border-right: 2px solid white;
+ }
+
+ @media only screen and (max-width:600px){
+
+  #principal{
+    flex-direction: column;
+    height: auto;
+  }
+
+  #menu{
+    flex-direction: column;
+    margin:0px;
+    width: 100%;
+    
+  }
+  
+  #menu a{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    
+  }
+
+  #principal button{
+    width:100%;
+    margin-right: 0px;
+  }
+
+  /*section*/
+
+  section h1{
+    font-size: 38px;
+  }
+
+  section h2{
+    font-size: 28px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+  }
+
+  form{
+    width:95%;
+    font-size: 20px;
+
+  }
+
+  .checkbox-itens label{
+    font-size: 20px;
+  }
+
+
  }
